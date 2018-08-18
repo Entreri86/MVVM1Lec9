@@ -1,3 +1,4 @@
+using MVVM1Lec9.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +12,7 @@ namespace MVVM1Lec9
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new NavigationPage(new PlayListsPage());
 		}
 
 		protected override void OnStart ()
